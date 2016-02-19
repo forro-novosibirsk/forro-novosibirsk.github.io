@@ -316,11 +316,16 @@
         </div>
       </div>
     
-      <style>
-      .row1, .row6-1, .row11-1,.row14, .row15 {
+<style>
+.row6-1, .row11-1,.row14, .row15 {
     padding: 3em 0 3em 0;    
 }
-
+          
+.row1 {
+    padding: 3em 0 3em 0;
+    box-shadow: 0px 5px 0px 0px #50a3da;             
+}
+          
 .row2and3 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /*граница между 3 и 4 блоками - между Сергеем и Тимуром*/
     clip-path: url(#idrow2and3);   /*запись через -webkit-clip-path для chromium, через clip-path: url для fierfox*/
@@ -392,7 +397,7 @@
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: url(#idrow13);
 }
-      </style>
+</style>
       
       <!--задание полигонов для clip-path в fierfox, обращение к которым происходит по url(index.html#id...)-->
        <svg width="0" height="0">
