@@ -315,7 +315,85 @@
               
         </div>
       </div>
+    
+      <style>
+      .row1, .row6-1, .row11-1,.row14, .row15 {
+    padding: 3em 0 3em 0;    
+}
 
+.row2and3 {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%); /*граница между 3 и 4 блоками - между Сергеем и Тимуром*/
+    clip-path: url(#idrow2and3);   /*запись через -webkit-clip-path для chromium, через clip-path: url для fierfox*/
+}
+
+.row2 {
+    padding: 3em 0 8em 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);/*граница между 2 и 3 блоками - между Иваном и Сергеем*/
+    clip-path: url(#idrow2);
+}
+
+.row3 {
+    padding: 1em 0 8em 0;
+}
+
+.row4 {
+    padding: 3em 0 1em 0;   
+}
+
+.row5 {
+    padding: 8em 0 8em 0;
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 85%);/*Андрей Смоленцев*/
+    clip-path: url(#idrow5);
+}
+
+.row6-2 {
+    padding: 3em 0 1em 0;    
+}
+
+.row7 {
+    padding: 9em 0 3em 0; /*препод Саша*/
+    -webkit-clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+    clip-path: url(#idrow7);
+    box-shadow: 0px 5px 0px 0px #53b67d;/*в fierfox спрятать под тенью белую границу между блоками одного цвета, но разных row*/
+}
+
+.row8and9and10 {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);/*грань между 10 и 11 блоками между Димой и Лешей*/
+    clip-path: url(#idrow8and9and10);    
+}
+
+.row8 {
+     padding: 3em 0 2em 0;
+}
+
+.row9{
+    padding: 8em 0 7em 0;/*Саша Волков - его блок между Геной и Димой*/
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: url(#idrow9);   
+}
+
+.row10 {
+    padding: 3em 0 7em 0;    
+}
+
+.row11-2{
+     padding: 3em 0 1em 0;
+}
+
+.row12 {
+    padding: 8em 0 3em 0;/*блок между Славой и Ромой Шестюгиным*/
+    -webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+    clip-path: url(#idrow12);
+    box-shadow: 0px 5px 0px 0px #50a3da;/*спрятать белую границу в fierfox между разными row в однотонном блоке */
+}
+
+.row13{
+    padding: 3em 0 6em 0;/*последний блок между Андреем Зеленчуковым и Женей Одноваловым*/
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: url(#idrow13);
+}
+      </style>
+      
       <!--задание полигонов для clip-path в fierfox, обращение к которым происходит по url(index.html#id...)-->
        <svg width="0" height="0">
            <clipPath id="idrow2and3" clipPathUnits="objectBoundingBox">
